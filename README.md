@@ -34,3 +34,17 @@
 └── libsynophoto-plugin-detection.so
 └── ffmpeg_dts_eac3_patch.sh
 ```
+
+Synology DS918+ / DSM 7.0.1-42218 / Video Station 3.0.1-2067 / ffmpeg 4.3.3-39 / ffmpeg wrapper (rev12):
+
+### install
+
+```
+sh -c "$(wget -O - https://raw.githubusercontent.com/dnasdw/documents-for-fun/master/Synology/ffmpeg_dts_eac3_patch.sh)" -p install
+```
+
+### uninstall
+
+```
+sh -c "$(wget -O - https://raw.githubusercontent.com/dnasdw/documents-for-fun/master/Synology/ffmpeg_dts_eac3_patch.sh)" -p uninstall
+```
