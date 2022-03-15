@@ -35,16 +35,31 @@
 └── ffmpeg_dts_eac3_patch.sh
 ```
 
-Synology DS918+ / DSM 7.0.1-42218 / Video Station 3.0.1-2067 / ffmpeg 4.3.3-39 / ffmpeg wrapper (rev12):
+- [x] Synology DS918+ / DSM 7.0.1-42218 Update 3 / Video Station 3.0.2-2072 / ffmpeg 4.3.3-39
+- [x] Synology DS918+ / DSM 7.0.1-42218 / Video Station 3.0.1-2067 / ffmpeg 4.3.3-39
+
+ffmpeg wrapper (rev12):
 
 ### install
 
-```
+```Shell
 sh -c "$(wget -O - https://raw.githubusercontent.com/dnasdw/documents-for-fun/master/Synology/ffmpeg_dts_eac3_patch.sh)" -p install
 ```
 
 ### uninstall
 
-```
+```Shell
 sh -c "$(wget -O - https://raw.githubusercontent.com/dnasdw/documents-for-fun/master/Synology/ffmpeg_dts_eac3_patch.sh)" -p uninstall
+```
+
+### install with proxy
+
+```Shell
+sh -c "$(wget -e "https_proxy=http://192.168.3.2:1083" -O - https://raw.githubusercontent.com/dnasdw/documents-for-fun/master/Synology/ffmpeg_dts_eac3_patch.sh)" -p install
+```
+
+### uninstall with proxy
+
+```Shell
+sh -c "$(wget -e "https_proxy=http://192.168.3.2:1083" -O - https://raw.githubusercontent.com/dnasdw/documents-for-fun/master/Synology/ffmpeg_dts_eac3_patch.sh)" -p uninstall
 ```
